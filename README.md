@@ -33,7 +33,13 @@ $ openocd -f ./openocd.cfg
 $ cargo run
 ```
 
-## VS Code
+# ARM Semihosting
+
+``` console
+(gdb) monitor imx8mq.m4 arm semihosting enable
+```
+
+# VS Code
 
 This template includes launch configurations for debugging CortexM programs with Visual Studio Code located in the `.vscode/` directory.  
 See [.vscode/README.md](./.vscode/README.md) for more information.  
