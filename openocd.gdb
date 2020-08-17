@@ -1,5 +1,10 @@
 target extended-remote :3334
 
+define hook-load
+  monitor imx8mq.ahb mww 0x3039000C 0xae
+  monitor imx8mq.m4 arp_halt
+end
+
 # print demangled symbols
 set print asm-demangle on
 
